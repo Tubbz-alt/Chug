@@ -18,9 +18,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Compiling
 ```
-1. Open "src/ChugCipher.sln" with the Visual Studio IDE
-2. Navigate to the "ChugCipher" project in the solution explorer
-3. Build (Menu Bar: Build > Build ChugCipher)
+1. Open "Chug.sln" with the Visual Studio IDE
+2. Navigate to the "Chug" project in the solution explorer
+3. Build (Menu Bar: Build > Build Chug)
 ```
 
 ## Authors
