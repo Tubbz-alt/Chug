@@ -25,14 +25,25 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Equations
 
-* **Mapping ("Encryption")**
-       - `p - c % 256 = k`
-* **Morphing ("Decryption")**
-       - `c + k % 256 = p`
-* **Variable Definitions**
-       - `p :   The variable that represents the plaintext value.`
-       - `c :   The variable that represents the ciphertext value.`
-       - `k :   The variable that represents the key value.`
+### **Mapping ("Encryption")**
+
+Mapping is the process of mathematically linking the plaintext to the ciphertext in order to create a key.
+```
+p - c % 256 = k
+```
+
+### **Morphing ("Decryption")**
+
+Morphing is the process of reading the ciphertext using the key to determine its relationship to the plaintext.
+```
+c + k % 256 = p
+```
+
+### **Variable Definitions**
+
+* **p** :   The variable that represents the plaintext value.
+* **c** :   The variable that represents the ciphertext value.
+* **k** :   The variable that represents the key value.
 
 ## Authors
 
