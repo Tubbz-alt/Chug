@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Chug is an unconventional symmetric cipher in which the ciphertext is used to map a message into a key value that defines how the ciphertext can be read in order to reveal the plaintext message. The only requirement of the cipher is that the size of the ciphertext be equal to or larger than the size of the plaintext. Chug very closely resembles the [One-time pad](https://en.wikipedia.org/wiki/One-time_pad) encryption technique, but differs in mathematic operation and in the use of the key.
+Chug is an unconventional symmetric cipher in which both the plaintext and the ciphertext are defined in order to be used to create a key that mathematically links the two values together. This allows a user to define what the displayed message would be while maintaining the ability to securely transmit the key through the use of a complimentary asymmetric cipher. The only requirement of the cipher is that the size of the ciphertext be equal to or larger than the size of the plaintext.
 
 ## Sugguestions & Bug Reports
 
@@ -22,6 +22,17 @@ These instructions will get you a copy of the project up and running on your loc
 2. Navigate to the "Chug" project in the solution explorer
 3. Build (Menu Bar: Build > Build Chug)
 ```
+
+## Equations
+
+* **Mapping ("Encryption")**
+       - `p - c % 256 = k`
+* **Morphing ("Decryption")**
+       - `c + k % 256 = p`
+* **Variable Definitions**
+       - `p :   The variable that represents the plaintext value.`
+       - `c :   The variable that represents the ciphertext value.`
+       - `k :   The variable that represents the key value.`
 
 ## Authors
 
